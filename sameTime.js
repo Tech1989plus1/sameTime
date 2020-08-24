@@ -1,4 +1,4 @@
-var SameTime = (arr) => {
+exports.sameTime = (arr) => {
   if (!Array.isArray(arr) || arr.length <= 0) {
     return [];
   }

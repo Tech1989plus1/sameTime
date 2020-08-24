@@ -4,7 +4,7 @@
   "description": "Given a list of peoples' birth year and death year, find the year(s) in which the most people were alive at the same time.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./test.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/Tech1989plus1/sameTime/issues"
   },
-  "homepage": "https://github.com/Tech1989plus1/sameTime#readme"
+  "homepage": "https://github.com/Tech1989plus1/sameTime#readme",
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  },
+  "//": "mocha is our preference, but you can use any test runner you like",
+  "dependencies": {
+  }
 }
