@@ -1,6 +1,11 @@
 var SameTime = (arr) => {
-  if (!Array.isArray(arr) && time.length < 0) {
+  if (!Array.isArray(arr) || arr.length <= 0) {
     return [];
+  }
+  
+  if (!Array.isArray(arr[0]) && arr.length === 2) {
+     arr[0] = [arr[0], arr[1]];
+     arr.pop();
   }
   
   var timeLine = [];
@@ -18,7 +23,7 @@ var SameTime = (arr) => {
       }
   }
   
-  for (let i = same[0], j = 0; i < same[1]; i++, j++) {
+  for (let i = same[0], j = 0; i <= same[1]; i++, j++) {
        timeLine[j] = i;
   }
 
